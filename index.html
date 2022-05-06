@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<main id="MainBG">
+    <section class="title">
+        <h1>Tic Tac Toe</h1>
+    </section>
+    <section class="display" id="title">
+        Player <span class="display-player playerX" id="player_turn">X</span>'s turn
+    </section>
+    <section class="container">
+        <div class="tile" id="0" onclick="clickTile(this)"></div>
+        <div class="tile" id="1" onclick="clickTile(this)"></div>
+        <div class="tile" id="2" onclick="clickTile(this)"></div>
+        <div class="tile" id="3" onclick="clickTile(this)"></div>
+        <div class="tile" id="4" onclick="clickTile(this)"></div>
+        <div class="tile" id="5" onclick="clickTile(this)"></div>
+        <div class="tile" id="6" onclick="clickTile(this)"></div>
+        <div class="tile" id="7" onclick="clickTile(this)"></div>
+        <div class="tile" id="8" onclick="clickTile(this)"></div>
+    </section>
+    <section class="display announcer hide"></section>
+    <section class="controls">
+        <button id="reset" onClick="location.reload()">Reset</button>
+    </section>
+</main>
+
+<script src="./js/game.js"></script>
+</body>
+</html>
